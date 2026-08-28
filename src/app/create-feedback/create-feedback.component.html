@@ -1,0 +1,89 @@
+
+<div class="card p-4">
+
+<h2>Submit Student Feedback</h2>
+
+<form (ngSubmit)="onSubmit()">
+
+<div class="mb-3">
+<label>Student Name</label>
+<input
+type="text"
+class="form-control"
+required
+name="studentName"
+[(ngModel)]="feedback.studentName">
+</div>
+
+<div class="mb-3">
+<label>USN</label>
+<input
+type="text"
+class="form-control"
+required
+name="usn"
+[(ngModel)]="feedback.usn">
+</div>
+
+<div class="mb-3">
+<label>Department</label>
+<input
+type="text"
+class="form-control"
+required
+name="department"
+[(ngModel)]="feedback.department">
+</div>
+
+<div class="mb-3">
+<label>Faculty Name</label>
+<input
+type="text"
+class="form-control"
+required
+name="facultyName"
+[(ngModel)]="feedback.facultyName">
+</div>
+
+<div class="mb-3">
+<label>Rating</label>
+
+<div class="star-rating">
+
+<span
+*ngFor="let star of [1,2,3,4,5]"
+(click)="feedback.rating = star"
+(dblclick)="feedback.rating = 0">
+
+{{star <= feedback.rating ? '⭐' : '✰'}}
+</span>
+
+</div>
+
+<div class="rating-text">
+Rating: {{feedback.rating}} / 5
+</div>
+
+</div>
+<div class="mb-3">
+<label>Feedback</label>
+
+<textarea
+rows="4"
+minlength="10"
+class="form-control"
+required
+name="feedback"
+[(ngModel)]="feedback.feedback">
+</textarea>
+</div>
+
+<button
+type="submit"
+class="btn btn-success">
+Submit
+</button>
+
+</form>
+
+</div>

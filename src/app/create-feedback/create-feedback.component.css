@@ -1,0 +1,55 @@
+.card{
+max-width:750px;
+margin:auto;
+padding:25px;
+}
+
+h2{
+color:#172554;
+text-align:center;
+margin-bottom:25px;
+font-weight:700;
+}
+
+label{
+font-weight:600;
+color:#334155;
+}
+
+.btn-success{
+width:100%;
+border-radius:10px;
+}
+.star-rating{
+display:flex;
+gap:8px;
+margin-top:10px;
+}
+
+.star-rating span{
+font-size:40px;
+cursor:pointer;
+color:gold;
+margin-right: 10px;
+transition:all .3s ease;
+user-select:none;
+}
+.star-rating span.active{
+color:#FFD700;
+text-shadow:0 0 10px #FFD700;
+}
+   .star-rating span:hover{
+transform:scale(1.2);
+}
+
+.star-rating span:nth-child(-n+5){
+    color:inherit;
+}
+.star-rating span{
+    color:#fbbf24;
+}
+.rating-text{
+margin-top:10px;
+font-weight:600;
+color:#1e40af;
+}

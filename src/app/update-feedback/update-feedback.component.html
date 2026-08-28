@@ -1,0 +1,142 @@
+
+<div class="card p-4">
+
+<h2 class="title">
+Update Student Feedback
+</h2>
+
+<form (ngSubmit)="onSubmit()">
+
+<!-- Student Name -->
+
+<div class="mb-3">
+
+<label class="form-label">
+Student Name
+</label>
+
+<input
+type="text"
+class="form-control"
+name="studentName"
+[(ngModel)]="feedback.studentName"
+required>
+
+</div>
+
+<!-- USN -->
+
+<div class="mb-3">
+
+<label class="form-label">
+USN
+</label>
+
+<input
+type="text"
+class="form-control"
+name="usn"
+[(ngModel)]="feedback.usn"
+required>
+
+</div>
+
+<!-- Department -->
+
+<div class="mb-3">
+
+<label class="form-label">
+Department
+</label>
+
+<input
+type="text"
+class="form-control"
+name="department"
+[(ngModel)]="feedback.department"
+required>
+
+</div>
+
+<!-- Faculty Name -->
+
+<div class="mb-3">
+
+<label class="form-label">
+Faculty Name
+</label>
+
+<input
+type="text"
+class="form-control"
+name="facultyName"
+[(ngModel)]="feedback.facultyName"
+required>
+
+</div>
+
+<!-- Rating -->
+
+<div class="mb-3">
+
+<label class="form-label">
+Rating
+</label>
+
+<input
+type="number"
+min="1"
+max="5"
+class="form-control"
+name="rating"
+[(ngModel)]="feedback.rating"
+required>
+
+</div>
+
+<!-- Feedback -->
+
+<div class="mb-3">
+
+<label class="form-label">
+Feedback
+</label>
+
+<textarea
+rows="5"
+minlength="10"
+class="form-control"
+name="feedback"
+[(ngModel)]="feedback.feedback"
+required>
+</textarea>
+
+</div>
+
+<div class="button-container">
+
+<button
+type="button"
+class="btn btn-danger"
+(click)="gotoList()">
+
+Cancel
+
+</button>
+
+<button
+type="submit"
+class="btn btn-success">
+
+Update Feedback
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+
+
