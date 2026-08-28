@@ -1,0 +1,42 @@
+<div class="wrapper">
+<nav class="navbar navbar-expand-lg custom-navbar">
+
+<div class="container-fluid">
+
+<a class="navbar-brand">
+<span style="font-size: 40px;">🎓</span>Student Feedback System
+</a>
+
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a routerLink="/dashboard" class="nav-link dashboard-link">
+📊 Dashboard
+</a>
+</li>
+
+<li class="nav-item">
+<a routerLink="/feedbacks" class="nav-link">
+📝 Feedback List
+</a>
+</li>
+
+<li class="nav-item">
+<a routerLink="/add" class="nav-link">
+➕ Add Feedback
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <div class="moving-text">© 2026 Student Feedback Management System</div>
+</footer>
+</div>

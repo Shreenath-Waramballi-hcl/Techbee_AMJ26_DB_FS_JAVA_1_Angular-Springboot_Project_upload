@@ -1,0 +1,26 @@
+.card{
+width:750px;
+margin:30px auto;
+padding:25px;
+}
+
+.title{
+text-align:center;
+color:#172554;
+margin-bottom:20px;
+}
+
+.form-label{
+font-weight:600;
+}
+
+.button-container{
+display:flex;
+justify-content:space-between;
+margin-top:20px;
+}
+
+.button-container .btn{
+width:180px;
+border-radius:10px;
+}
